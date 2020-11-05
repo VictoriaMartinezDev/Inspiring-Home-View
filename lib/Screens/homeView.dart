@@ -9,7 +9,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(120.0),
+        preferredSize: Size.fromHeight(100.0),
         child: NavigationBar(),
       ),
       backgroundColor: Colors.transparent,

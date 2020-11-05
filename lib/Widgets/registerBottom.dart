@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:basicscreenpage/Constants/resposiveLayout.dart';
 
 class RegisterBottom extends StatelessWidget {
   @override
@@ -9,7 +10,6 @@ class RegisterBottom extends StatelessWidget {
         margin: EdgeInsets.only(
           left: 0,
         ),
-//                      width: 120,
         height: 45,
         decoration: BoxDecoration(
             gradient: LinearGradient(
@@ -36,7 +36,7 @@ class RegisterBottom extends StatelessWidget {
               'Register your interest',
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 18,
+                fontSize: ResponsiveLayout.isSmallScreen(context) ? 15 : 18,
                 letterSpacing: 1,
                 fontFamily: 'Oswald',
               ),

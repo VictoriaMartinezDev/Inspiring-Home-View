@@ -50,7 +50,7 @@ class _FirstScreenState extends State<FirstScreen> {
                     style: TextStyle(
                       fontSize: (ResponsiveLayout.isLargeScreen(context) ? 50 : 30),
                       fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                      color: Color(0xFFFFFFED),
                     ),
                   ),
                   Text(
@@ -58,10 +58,10 @@ class _FirstScreenState extends State<FirstScreen> {
                     style: TextStyle(
                       fontSize: (ResponsiveLayout.isLargeScreen(context) ? 50 : 30),
                       fontWeight: FontWeight.bold,
-                      color: Colors.white,
+                      color: Color(0xFFFFFFED),
                     ),
                   ),
-                  SizedBox(height: 18,),
+                  SizedBox(height: 30,),
                   RichText(
                     text: TextSpan(
                       text: '... Inspiring',
@@ -74,11 +74,11 @@ class _FirstScreenState extends State<FirstScreen> {
                   ),
                   SizedBox(height: 100,),
                   Padding(
-                    padding: const EdgeInsets.only(left: 12, top: 20),
+                    padding: const EdgeInsets.only(left: 20, top: 20),
                     child: ButtonTheme(
                       minWidth: (ResponsiveLayout.isLargeScreen(context) ? 130 : 70),
                       height: 50.0,
-                      buttonColor: Color(0xFFf5b489),
+                      buttonColor: Color(0xFFe3670b),
                       child: RaisedButton(
                         onPressed: () {
 //                          Navigator.push(
@@ -87,7 +87,7 @@ class _FirstScreenState extends State<FirstScreen> {
 //                          );
                         },
                         child: const Text(
-                            'Show more',
+                            'Show me more',
                             style: TextStyle(fontSize: 20,
                                 fontWeight: FontWeight.bold, color: Colors.white)
                         ),

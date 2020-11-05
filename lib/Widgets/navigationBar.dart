@@ -15,16 +15,16 @@ class NavigationBar extends StatelessWidget {
           Row(
             children: <Widget>[
               Padding(
-                padding: EdgeInsets.only(left: 30.0,top: 10.0),
+                padding: EdgeInsets.only(left: ResponsiveLayout.isSmallScreen(context) ? 10.0 : 30,top: 10.0),
                 child: Image.asset(
                   'images/logo1.png',
-                  width: 200,
-                  height: 200,
+                  width: 220,
+                  height: 220,
                 ),
               ),
 
               SizedBox(
-                width: 16,
+                width: ResponsiveLayout.isSmallScreen(context) ? 10: 16,
               ),
             ],
           ),
